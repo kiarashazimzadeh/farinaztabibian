@@ -88,5 +88,3 @@ fields:
   hidden: true
   label: Layout
   default: resume
-pages:
-- resume.md

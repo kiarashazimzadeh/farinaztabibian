@@ -81,3 +81,5 @@ fields:
     labelField: 
   label: Education
   description: Here you can add your education.
+pages:
+- Farinaz's resume.md

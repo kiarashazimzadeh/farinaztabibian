@@ -19,6 +19,5 @@ education:
   to_present: false
   present: Present
   end: 2010-09-01 00:00:00 +0430
-published: false
 
 ---

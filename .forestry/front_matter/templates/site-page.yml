@@ -81,5 +81,12 @@ fields:
     labelField: 
   label: Education
   description: Here you can add your education.
+- name: layout
+  type: text
+  config:
+    required: false
+  hidden: true
+  label: Layout
+  default: resume
 pages:
 - Farinaz's resume.md

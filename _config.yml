@@ -1,0 +1,11 @@
+url: ""
+baseurl: ""
+title: "personal site"
+description: >-
+  Here, you can find my resume and read my blog.
+author:
+  name: "Farinaz Tabibian"
+  image: assets/img/me.png
+  email: farinaztabibian@gmail.com
+  phone-number: 00989131026940
+  address: Isfahan University of Medical Sciences, Isfahan, Iran

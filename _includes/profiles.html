@@ -1,0 +1,7 @@
+<div class="d-flex flex-wrap gap-3">
+    {% for profile in site.data.links.profiles %}
+    <button class="btn btn-light rounded p-2 d-flex align-items-center justify-content-center">
+        <span class="fa-brands fa-{{ profile.title | slugify }} fs-1"></span>
+    </button>
+    {% endfor %}
+</div>

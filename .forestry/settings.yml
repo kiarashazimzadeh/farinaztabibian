@@ -15,7 +15,7 @@ sections:
   label: Layouts
   create: all
   match: "**/*"
-  new_doc_ext: ".html"
+  new_doc_ext: html
 - type: directory
   path: _includes
   label: Includes

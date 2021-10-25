@@ -1,6 +1,6 @@
 ---
 about_me:
-  birthdate: 1996-08-04 00:00:00 +0430
+  birthdate: 1996-08-04T00:00:00.000+04:30
   birthplace: Isfahan, Iran
   introduction: I’m a medical doctor, looking forward to be a clinician scientist
     from first days of medical school. I gathered some experience in clinical research,
@@ -9,15 +9,15 @@ about_me:
 education:
 - organization: Farzanegan Amin High School (National Organization for Development
     of Exceptional Talents, NODET)
-  start: 2010-09-01 00:00:00 +0430
+  start: 2010-09-01T00:00:00.000+04:30
   to_present: false
   present: Present
-  end: 2014-09-01 00:00:00 +0430
+  end: 2014-09-01T00:00:00.000+04:30
 - organization: Farzanegan Amin Middle School (National Organization for Development
     of Exceptional Talents, NODET)
-  start: 2007-09-01 00:00:00 +0330
+  start: 2007-09-01T00:00:00.000+03:30
   to_present: false
   present: Present
-  end: 2010-09-01 00:00:00 +0430
+  end: 2010-09-01T00:00:00.000+04:30
 
 ---

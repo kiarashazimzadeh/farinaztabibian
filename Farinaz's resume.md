@@ -6,7 +6,13 @@ about_me:
     from first days of medical school. I gathered some experience in clinical research,
     programming, and animal models through student time and now try to progress. Currently
     I’m interested in Neurology and Clinical Neuroscience.
-education: []
+education:
+- organization: Farzanegan Amin Junior High School (National Organization for Development
+    of Exceptional Talents, NODET)
+  start: 2010-09-01 00:00:00 +0430
+  to_present: false
+  present: Present
+  end: 2014-09-01 00:00:00 +0430
 published: false
 
 ---

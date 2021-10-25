@@ -1,4 +1,83 @@
 ---
 label: Site page
 hide_body: true
-fields: []
+fields:
+- name: about_me
+  type: field_group
+  config: {}
+  fields:
+  - name: birthdate
+    type: datetime
+    label: Birthdate
+    description: ''
+    config:
+      required: true
+      date_format: MMMM Do, YYYY
+      time_format: 
+      display_utc: false
+    default: ''
+  - name: birthplace
+    type: text
+    config:
+      required: true
+    label: Birthplace
+  - name: introduction
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: markdown
+      max: 500
+      min: 50
+    label: Introduction
+  label: About me
+- name: education
+  type: field_group_list
+  fields:
+  - name: organization
+    type: text
+    config:
+      required: true
+    label: Organization
+  - name: start
+    type: datetime
+    config:
+      required: true
+      date_format: 'MMM. YYYY '
+      time_format: 
+      display_utc: false
+    label: Start
+  - name: to_present
+    type: boolean
+    label: To present?
+    default: false
+  - name: present
+    type: text
+    config:
+      required: false
+    label: Present
+    hidden: true
+    default: Present
+    showOnly:
+      field: to_present
+      value: true
+  - name: end
+    type: datetime
+    label: End
+    description: ''
+    config:
+      required: true
+      date_format: MMM. YYYY
+      time_format: 
+      display_utc: false
+    showOnly:
+      field: to_present
+      value: false
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Education
+  description: Here you can add your education.

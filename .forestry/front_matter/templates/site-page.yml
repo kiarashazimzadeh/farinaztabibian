@@ -486,6 +486,17 @@ fields:
     label: Level
     showOnly:
       field: native_language
+  - name: country_code
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html
+    label: Country code
+    description: 'Example: IR. Find your country code here: <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
+      title="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes" target="_blank">https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes</a>'
   config:
     min: 
     max: 

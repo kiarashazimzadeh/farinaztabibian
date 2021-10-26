@@ -232,6 +232,11 @@ skills_and_knowledge:
 - title: Scientific Reasoning
 - title: General Medicine
 languages:
+- language: Persian
+  native_language: true
+  native: Native Language
+  level: A1
+  country_code: IR
 - language: English
   native_language: false
   native: Native Language
@@ -242,8 +247,3 @@ languages:
   native: Native Language
   level: B1
   country_code: DE
-- language: Persian
-  native_language: true
-  native: Native Language
-  level: A1
-  country_code: IR

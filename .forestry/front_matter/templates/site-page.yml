@@ -205,7 +205,7 @@ fields:
   - name: team_members
     type: field_group_list
     fields:
-    - name: firstname
+    - name: name
       type: text
       config:
         required: true

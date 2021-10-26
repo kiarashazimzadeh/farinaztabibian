@@ -420,6 +420,8 @@ fields:
     showOnly:
       field: native_language
       value: true
+    default: Native Language
+    hidden: true
   - name: level
     type: select
     default: []

@@ -146,6 +146,11 @@ honors:
   organization: Isfahan University of Medical Sciences
   year: 2021-10-01 00:00:00 +0330
 events:
+- title: Literature Review Workshop
+  type: Workshop
+  role: Participant
+  location: Isfahan University of Medical Sciences
+  start: 2015-10-01 00:00:00 +0330
 - title: Research Methodology Workshop
   type: Workshop
   role: Participant

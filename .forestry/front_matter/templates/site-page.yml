@@ -205,7 +205,7 @@ fields:
   - name: team_members
     type: field_group_list
     fields:
-    - name: firstname
+    - name: name
       type: text
       config:
         required: true
@@ -391,15 +391,15 @@ fields:
 - name: skills_and_knowledge
   type: field_group_list
   fields:
-  - name: skill_or_knowledge
+  - name: title
     type: text
     config:
       required: true
-    label: Skill or Knowledge
+    label: Title
   config:
     min: 
     max: 
-    labelField: skill_or_knowledge
+    labelField: title
   label: Skills & Knowledge
 - name: languages
   type: field_group_list

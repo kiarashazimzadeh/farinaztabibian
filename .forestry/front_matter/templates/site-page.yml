@@ -394,3 +394,5 @@ fields:
     max: 
     labelField: language
   label: Languages
+pages:
+- _data/resume.yaml

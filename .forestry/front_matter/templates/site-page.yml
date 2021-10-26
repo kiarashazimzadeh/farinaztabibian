@@ -6,6 +6,25 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: complete_name
+    type: text
+    config:
+      required: true
+    label: Complete name
+  - name: titles
+    type: field_group_list
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+      description: 'Example: MD'
+    config:
+      min: 
+      max: 
+      labelField: title
+    label: Titles
   - name: birthdate
     type: datetime
     label: Birthdate
@@ -90,11 +109,6 @@ fields:
       max: 
       labelField: title
     label: Links
-  - name: complete_name
-    type: text
-    config:
-      required: true
-    label: Complete name
   label: About me
 - name: education
   type: field_group_list

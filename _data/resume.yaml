@@ -232,6 +232,11 @@ skills_and_knowledge:
 - title: Scientific Reasoning
 - title: General Medicine
 languages:
+- language: English
+  native_language: false
+  native: Native Language
+  level: C1
+  country_code: en
 - language: German Deutsch
   native_language: false
   native: Native Language

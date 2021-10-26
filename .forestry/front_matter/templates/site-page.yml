@@ -49,7 +49,7 @@ fields:
       type: number
       label: Country code
       description: 'Example: 0098'
-      default: 0
+      default: 
       required: true
       config:
         min: 
@@ -60,7 +60,7 @@ fields:
       type: number
       label: Phone number
       description: 'Example: 9130001122'
-      default: 0
+      default: 
       required: true
       config:
         min: 

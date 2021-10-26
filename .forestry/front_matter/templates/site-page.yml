@@ -130,7 +130,7 @@ fields:
     label: End
     description: ''
     config:
-      required: true
+      required: false
       date_format: MMM. YYYY
       time_format: 
       display_utc: false
@@ -182,7 +182,7 @@ fields:
     type: datetime
     description: ''
     config:
-      required: true
+      required: false
       date_format: MMM. YYYY
       time_format: 
       display_utc: false

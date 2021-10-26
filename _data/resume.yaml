@@ -223,7 +223,9 @@ skills:
 - skill: MATLAB Programming Language
 - skill: Statistical Analysis
 - skill: General Medicine
-languages: []
+languages:
+- language: Persian
+  level: C2
 skills_and_knowledge:
 - skill_or_knowledge: Teaching Techniques
 - skill_or_knowledge: Team Management

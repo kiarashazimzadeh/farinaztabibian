@@ -83,6 +83,25 @@ fields:
     config:
       required: true
     label: Organization
+  - name: level
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Elementary School
+      - Middle School
+      - High School
+      - BSc
+      - MSc
+      - PhD
+      - Postdoc
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Level
   - name: start
     type: datetime
     config:

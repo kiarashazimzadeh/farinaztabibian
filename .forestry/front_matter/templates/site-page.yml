@@ -25,12 +25,6 @@ fields:
       max: 
       labelField: title
     label: Titles
-  - name: profile_picture
-    type: file
-    config:
-      maxSize: 10
-    label: Profile picture
-    description: It should be less than 10 MB!
   - name: birthdate
     type: datetime
     label: Birthdate

@@ -1,5 +1,8 @@
 ---
 about_me:
+  complete_name: Farinaz Tabibian
+  titles:
+  - title: MD
   phone_number:
     country_code: '0098'
     phone_number: 9131026940
@@ -15,9 +18,6 @@ about_me:
     url: http://www.researchgate.net/profile/Farinaz_Tabibian
   - title: LinkedIn
     url: http://www.linkedin.com/in/farinaz-tabibian
-  complete_name: Farinaz Tabibian
-  titles:
-  - title: MD
 education:
 - organization: Isfahan University of Medical Sciences
   level: MD

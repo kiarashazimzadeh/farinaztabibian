@@ -149,9 +149,14 @@ events:
 - title: Critical Thinking
   type: Workshop
   role: Participant
+  location: University of Isfahan
+  start: 2017-10-01 00:00:00 +0330
+- title: Critical Thinking
+  type: Workshop
+  role: Participant
   location: Isfahan University of Medical Sciences
   start: 2017-10-01 00:00:00 +0330
-- title: Isfahan Brain and Cognition Conference
+- title: Isfahan Brain and Cognition
   type: Conference
   role: Organizer
   location: Isfahan University of Medical Sciences

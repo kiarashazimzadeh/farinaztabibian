@@ -35,6 +35,13 @@ education:
   end: 2010-09-01 00:00:00 +0430
   level: Middle School
 career:
+- organization: Farzanegan Amin Middle High School (National Organization for Development
+    of Exceptional Talents, NODET)
+  role: Biology Olympiad Teacher
+  start: 2015-01-01 00:00:00 +0330
+  to_present_: false
+  to_present: To present
+  end: 2016-08-01 00:00:00 +0430
 - organization: Regenerative Medicine Research Center, Isfahan University of Medical
     Sciences
   role: Guest Investigator

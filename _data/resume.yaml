@@ -231,3 +231,9 @@ skills_and_knowledge:
 - title: Statistical Data Analysis
 - title: Scientific Reasoning
 - title: General Medicine
+languages:
+- language: Persian
+  native_language: true
+  native: Native Language
+  level: A1
+  country_code: IR

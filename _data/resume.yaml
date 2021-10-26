@@ -35,6 +35,13 @@ education:
   end: 2010-09-01 00:00:00 +0430
   level: Middle School
 career:
+- organization: Exceptional Talents Office, Education Development Center, Isfahan
+    University of Medical Sciences
+  role: Member
+  start: 2014-09-01 00:00:00 +0430
+  to_present_: false
+  to_present: To present
+  end: 2021-10-01 00:00:00 +0330
 - organization: Isfahan Neuroscience Association, Isfahan University of Medical Sciences
   role: Executive Board Member
   start: 2020-10-01 00:00:00 +0330

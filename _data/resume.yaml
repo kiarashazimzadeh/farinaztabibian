@@ -16,6 +16,8 @@ about_me:
   - title: LinkedIn
     url: http://www.linkedin.com/in/farinaz-tabibian
   complete_name: Farinaz Tabibian
+  titles:
+  - title: MD
 education:
 - organization: Isfahan University of Medical Sciences
   level: MD

@@ -362,6 +362,7 @@ fields:
       options:
       - Organizer
       - Participant
+      - Presenter
       source:
         type: simple
         section: 

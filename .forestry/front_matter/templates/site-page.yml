@@ -46,27 +46,19 @@ fields:
     config: {}
     fields:
     - name: country_code
-      type: number
+      type: text
+      config:
+        required: true
+        min: 3
+        max: 4
       label: Country code
       description: 'Example: 0098'
-      default: 
-      required: true
-      config:
-        min: 
-        max: 
-        step: 
-        required: true
     - name: phone_number
-      type: number
-      label: Phone number
-      description: 'Example: 9130001122'
-      default: 
-      required: true
+      type: text
       config:
-        min: 
-        max: 
-        step: 
         required: true
+      label: Phone number
+      description: 'Example: 9120001122'
     label: Phone number
   - name: links
     type: field_group_list

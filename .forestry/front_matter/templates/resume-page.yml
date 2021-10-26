@@ -1,4 +1,9 @@
 ---
 label: Resume page
 hide_body: true
-fields: []
+fields:
+- name: resume_data
+  type: include
+  config: {}
+  template: site-page
+  label: Resume data

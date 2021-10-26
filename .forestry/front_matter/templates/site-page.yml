@@ -370,19 +370,19 @@ fields:
     max: 
     labelField: 
   label: Events
-- name: skills
+- name: skills_and_knowledge
   type: field_group_list
   fields:
-  - name: skill
+  - name: skill_or_knowledge
     type: text
     config:
       required: true
-    label: Skill
+    label: Skill or Knowledge
   config:
     min: 
     max: 
     labelField: skill
-  label: Skills
+  label: Skills & Knowledge
 - name: languages
   type: field_group_list
   fields:

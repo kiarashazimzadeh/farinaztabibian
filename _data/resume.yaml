@@ -236,4 +236,255 @@ languages:
   level: C2
   native_language: true
   native: ''
-skills_and_knowledge: []
+skills_and_knowledge:
+---
+about_me:
+  phone_number: 989131026940
+  birthdate: 1996-08-04 00:00:00 +0430
+  birthplace: Isfahan, Iran
+  introduction: I’m a medical doctor, looking forward to be a clinician scientist
+    from first days of medical school. I gathered some experience in clinical research,
+    programming, and animal models through student time and now try to progress. Currently
+    I’m interested in Neurology and Clinical Neuroscience.
+  e-mail: farinaztabibian@gmail.com
+  links:
+  - title: ResearchGate
+    url: http://www.researchgate.net/profile/Farinaz_Tabibian
+  - title: LinkedIn
+    url: http://www.linkedin.com/in/farinaz-tabibian
+education:
+- organization: Isfahan University of Medical Sciences
+  level: MD
+  start: 2014-09-01 00:00:00 +0430
+  to_present: false
+  present: To present
+  end: 2020-03-01 00:00:00 +0330
+- organization: Farzanegan Amin High School (National Organization for Development
+    of Exceptional Talents, NODET)
+  level: High School
+  start: 2010-09-01 00:00:00 +0430
+  to_present: false
+  present: To present
+  end: 2014-09-01 00:00:00 +0430
+- organization: Farzanegan Amin School (National Organization for Development of Exceptional
+    Talents, NODET)
+  start: 2007-09-01 00:00:00 +0330
+  to_present: false
+  present: To present
+  end: 2010-09-01 00:00:00 +0430
+  level: Middle School
+career:
+- organization: Exceptional Talents Office, Education Development Center, Isfahan
+    University of Medical Sciences
+  role: Member
+  start: 2014-09-01 00:00:00 +0430
+  to_present_: false
+  to_present: To present
+  end: 2021-10-01 00:00:00 +0330
+- organization: Isfahan Neuroscience Association, Isfahan University of Medical Sciences
+  role: Executive Board Member
+  start: 2020-10-01 00:00:00 +0330
+  to_present_: true
+  to_present: To present
+  end: 
+- organization: Farzanegan Amin Middle High School (National Organization for Development
+    of Exceptional Talents, NODET)
+  role: Biology Olympiad Teacher
+  start: 2015-01-01 00:00:00 +0330
+  to_present_: false
+  to_present: To present
+  end: 2016-08-01 00:00:00 +0430
+- organization: Regenerative Medicine Research Center, Isfahan University of Medical
+    Sciences
+  role: Guest Investigator
+  start: 2015-06-01 00:00:00 +0430
+  to_present_: false
+  to_present: To present
+  end: 2016-05-01 00:00:00 +0430
+- organization: Regenerative Medicine Research Center, Isfahan University of Medical
+    Sciences
+  role: Student Researcher
+  start: 2016-06-01 00:00:00 +0430
+  to_present_: false
+  to_present: To present
+  end: 2019-05-01 00:00:00 +0430
+- organization: Neuroscience Research Center, Isfahan University of Medical Sciences
+  role: Student Researcher
+  start: 2019-11-01 00:00:00 +0330
+  to_present_: false
+  to_present: To present
+  end: 2021-10-01 00:00:00 +0330
+- organization: Sanayei Laboratory of Neural Circuit and Behavior, Center for Translational
+    Neuroscience, Isfahan University of Medical Sciences
+  role: Research Assistant
+  start: 2020-03-01 00:00:00 +0330
+  to_present_: true
+  to_present: To present
+  end: 
+- organization: Isfahan University of Medical Sciences
+  role: Medical Intern
+  start: 2020-03-01 00:00:00 +0330
+  to_present_: false
+  to_present: To present
+  end: 2021-10-01 00:00:00 +0330
+projects:
+- title: Zal Dementia Awareness Project
+  team_members:
+  - firstname: Kiarash Azimzadeh
+  start: 2021-09-01 00:00:00 +0430
+  ongoing_: true
+  ongoing: Ongoing
+  end: 
+  url: ''
+- title: Evaluation of Spatial Attention in Multiple Sclerosis Patients
+  team_members:
+  - firstname: Fereshteh Ashtari
+  - firstname: Vahid Shayegannejad
+  - firstname: Kiarash Azimzadeh
+  - firstname: Mehdi Sanayei
+  - firstname: Iman Adibi
+  start: 2020-05-01 00:00:00 +0430
+  ongoing_: true
+  ongoing: Ongoing
+  end: 
+  url: ''
+publications:
+- title: Vertigo Could Give Notice of Herpes Simplex Virus Encephalitis
+  journal: Journal of NeuroVirology
+  year: 2021-10-01 00:00:00 +0330
+  doi: ''
+  url: ''
+- title: 'Multiple Sclerosis-Related Fatigue Lacks a Unified Definition: A Narrative
+    Review'
+  journal: Journal of Research in Medical Sciences
+  year: 2021-10-01 00:00:00 +0330
+  doi: ''
+  url: ''
+- title: Evaluating the effect of remote ischemic preconditioning on kidney ischemia–reperfusion
+    injury
+  journal: Journal of Research in Medical Sciences
+  year: 2020-10-01 00:00:00 +0330
+  doi: ''
+  url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7003542/
+- title: Huntington Study Group Abstracts 2020
+  journal: Neurotherapeutics
+  year: 2021-10-01 00:00:00 +0330
+  doi: ''
+  url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7574988/
+- title: Cerebral venous thrombosis, neutropenia and iron-deficiency anemia in Huntington
+    disease
+  journal: Neurodegenerative Disease Management
+  year: 2021-10-01 00:00:00 +0330
+  doi: ''
+  url: https://pubmed.ncbi.nlm.nih.gov/33703929/
+honors:
+- title: Top 1% of National University Entrance Exam (AKA کنکور)
+  organization: Education Evaluation Organization of Iran
+  year: 2014-10-01 00:00:00 +0330
+- title: Top 5% of GPA among Medical Students
+  organization: Isfahan University of Medical Sciences
+  year: 2021-10-01 00:00:00 +0330
+events:
+- title: 2021 Sharif Neuroscience Symosium
+  type: Virtual Meeting
+  role: Participant
+  location: Sharif University of Technology
+  start: 2021-10-01 00:00:00 +0330
+- title: 2020 Cognitive Neuroscience Competition
+  type: Workshop
+  role: Participant
+  location: Tehran University of Medical Sciences
+  start: 2020-10-01 00:00:00 +0330
+- title: 27th Huntington Study Group Annual Meeting
+  type: Virtual Meeting
+  role: Participant
+  location: Huntington Study Group, Rochester, USA
+  start: 2020-10-01 00:00:00 +0330
+- title: Entrepreneurship and Startups
+  type: Workshop
+  role: Participant
+  location: Isfahan University of Medical Sciences
+  start: 2019-10-01 00:00:00 +0330
+- title: EEG Data Analysis
+  type: Workshop
+  role: Participant
+  location: National Brain Mapping Laboratory, Tehran, Iran
+  start: 2019-10-01 00:00:00 +0330
+- title: Evolution
+  type: Conference
+  role: Participant
+  location: Sharif University of Technology
+  start: 2018-10-01 00:00:00 +0330
+- title: Critical Thinking
+  type: Workshop
+  role: Participant
+  location: University of Isfahan
+  start: 2017-10-01 00:00:00 +0330
+- title: Critical Thinking
+  type: Workshop
+  role: Participant
+  location: Isfahan University of Medical Sciences
+  start: 2017-10-01 00:00:00 +0330
+- title: Isfahan Brain and Cognition
+  type: Conference
+  role: Organizer
+  location: Isfahan University of Medical Sciences
+  start: 2016-10-01 00:00:00 +0330
+- title: Brain Awareness Day
+  type: Campaign
+  role: Participant
+  location: Isfahan University of Medical Sciences
+  start: 2016-10-01 00:00:00 +0330
+- title: Literature Review Workshop
+  type: Workshop
+  role: Participant
+  location: Isfahan University of Medical Sciences
+  start: 2015-10-01 00:00:00 +0330
+- title: Research Methodology Workshop
+  type: Workshop
+  role: Participant
+  location: Isfahan University of Medical Sciences
+  start: 2015-10-01 00:00:00 +0330
+- title: An Introduction to Research Workshop
+  type: Workshop
+  role: Participant
+  start: 2015-03-01 00:00:00 +0330
+  location: Isfahan University of Medical Sciences
+skills:
+- skill: Teaching Techniques
+- skill: Team Management
+- skill: Scientific Presentation
+- skill: Scientific Writing
+- skill: Working with Animal Models
+- skill: Microsoft Office Software Packages
+- skill: Psychophysics Tasks Design
+- skill: IBM SPSS Software Package
+- skill: MATLAB Programming Language
+- skill: Statistical Analysis
+- skill: General Medicine
+languages:
+- language: Deutsch
+  native_language: false
+  native: Native Language
+  level: B1
+- level: C1
+  language: English
+  native_language: false
+  native: ''
+- language: Persian
+  level: C2
+  native_language: true
+  native: ''
+skills_and_knowledge:
+- title: Teaching Techniques
+- title: Team Management
+- title: Scientific Presentation
+- title: Scientific Writing
+- title: Working with Laboratory Animal Models
+- title: Microsoft Office Software Packages
+- title: Psychophysics Tasks Design
+- title: IBM SPSS Software Package
+- title: MATLAB Programming Language
+- title: Statistical Data Analysis
+- title: Scientific Reasoning
+- title: General Medicine

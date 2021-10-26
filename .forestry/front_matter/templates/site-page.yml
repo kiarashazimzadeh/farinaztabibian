@@ -104,6 +104,15 @@ fields:
         schema:
           format: markdown
       label: Username
+    - name: url
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: URL
     config:
       min: 
       max: 

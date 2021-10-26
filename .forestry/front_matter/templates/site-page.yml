@@ -391,11 +391,11 @@ fields:
 - name: skills_and_knowledge
   type: field_group_list
   fields:
-  - name: skill_or_knowledge
+  - name: title
     type: text
     config:
       required: true
-    label: Skill or Knowledge
+    label: Title
   config:
     min: 
     max: 

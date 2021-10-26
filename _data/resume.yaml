@@ -146,6 +146,11 @@ honors:
   organization: Isfahan University of Medical Sciences
   year: 2021-10-01 00:00:00 +0330
 events:
+- title: EEG Data Analysis
+  type: Workshop
+  role: Participant
+  location: National Brain Mapping Laboratory, Tehran, Iran
+  start: 2019-10-01 00:00:00 +0330
 - title: Evolution
   type: Conference
   role: Participant

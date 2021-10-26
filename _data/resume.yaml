@@ -224,6 +224,10 @@ skills:
 - skill: Statistical Analysis
 - skill: General Medicine
 languages:
+- language: Deutsch
+  native_language: false
+  native: Native Language
+  level: B1
 - level: C1
   language: English
   native_language: false

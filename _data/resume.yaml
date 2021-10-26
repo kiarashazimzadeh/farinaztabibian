@@ -218,18 +218,6 @@ events:
   role: Participant
   start: 2015-03-01T00:00:00.000+03:30
   location: Isfahan University of Medical Sciences
-skills:
-- skill: Teaching Techniques
-- skill: Team Management
-- skill: Scientific Presentation
-- skill: Scientific Writing
-- skill: Working with Animal Models
-- skill: Microsoft Office Software Packages
-- skill: Psychophysics Tasks Design
-- skill: IBM SPSS Software Package
-- skill: MATLAB Programming Language
-- skill: Statistical Analysis
-- skill: General Medicine
 languages:
 - language: Deutsch
   native_language: false

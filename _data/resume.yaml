@@ -34,7 +34,13 @@ education:
   present: To present
   end: 2010-09-01 00:00:00 +0430
   level: Middle School
-career: []
+career:
+- organization: Isfahan University of Medical Sciences
+  role: Medical Intern
+  start: 2020-03-01 00:00:00 +0330
+  to_present_: false
+  to_present: To present
+  end: 2021-10-01 00:00:00 +0330
 projects: []
 publications: []
 honors: []

@@ -13,7 +13,14 @@ about_me:
     url: http://www.researchgate.net/profile/Farinaz_Tabibian
   - title: LinkedIn
     url: http://www.linkedin.com/in/farinaz-tabibian
-education: []
+education:
+- organization: Farzanegan Amin School (National Organization for Development of Exceptional
+    Talents, NODET)
+  start: 2007-09-01 00:00:00 +0330
+  to_present: false
+  present: To present
+  end: 2010-09-01 00:00:00 +0430
+  level: Middle School
 career: []
 projects: []
 publications: []

@@ -347,6 +347,7 @@ fields:
       - Workshop
       - Conference
       - Virtual Meeting
+      - Campaign
       source:
         type: simple
         section: 

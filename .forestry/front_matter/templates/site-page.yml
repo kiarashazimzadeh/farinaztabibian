@@ -409,6 +409,17 @@ fields:
     config:
       required: true
     label: Language
+  - name: native_language
+    type: boolean
+    label: Native language?
+  - name: native
+    type: text
+    config:
+      required: false
+    label: Native
+    showOnly:
+      field: native_language
+      value: true
   - name: level
     type: select
     default: []
@@ -427,6 +438,8 @@ fields:
         file: 
         path: 
     label: Level
+    showOnly:
+      field: native_language
   config:
     min: 
     max: 

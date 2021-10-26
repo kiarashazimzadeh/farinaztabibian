@@ -42,50 +42,16 @@ education:
   end: 2010-09-01T00:00:00.000+04:30
   level: Middle School
 career:
-- organization: Exceptional Talents Office, Education Development Center, Isfahan
-    University of Medical Sciences
-  role: Member
-  start: 2014-09-01T00:00:00.000+04:30
-  to_present_: false
-  to_present: To present
-  end: 2021-10-01T00:00:00.000+03:30
-- organization: Isfahan Neuroscience Association, Isfahan University of Medical Sciences
-  role: Executive Board Member
-  start: 2020-10-01T00:00:00.000+03:30
-  to_present_: true
-  to_present: To present
-  end: 
-- organization: Farzanegan Amin Middle High School (National Organization for Development
-    of Exceptional Talents, NODET)
-  role: Biology Olympiad Teacher
-  start: 2015-01-01T00:00:00.000+03:30
-  to_present_: false
-  to_present: To present
-  end: 2016-08-01T00:00:00.000+04:30
-- organization: Regenerative Medicine Research Center, Isfahan University of Medical
-    Sciences
-  role: Guest Investigator
-  start: 2015-06-01T00:00:00.000+04:30
-  to_present_: false
-  to_present: To present
-  end: 2016-05-01T00:00:00.000+04:30
-- organization: Regenerative Medicine Research Center, Isfahan University of Medical
-    Sciences
-  role: Student Researcher
-  start: 2016-06-01T00:00:00.000+04:30
-  to_present_: false
-  to_present: To present
-  end: 2019-05-01T00:00:00.000+04:30
-- organization: Neuroscience Research Center, Isfahan University of Medical Sciences
-  role: Student Researcher
-  start: 2019-11-01T00:00:00.000+03:30
-  to_present_: false
-  to_present: To present
-  end: 2021-10-01T00:00:00.000+03:30
 - organization: Sanayei Laboratory of Neural Circuit and Behavior, Center for Translational
     Neuroscience, Isfahan University of Medical Sciences
   role: Research Assistant
   start: 2020-03-01T00:00:00.000+03:30
+  to_present_: true
+  to_present: To present
+  end: 
+- organization: Isfahan Neuroscience Association, Isfahan University of Medical Sciences
+  role: Executive Board Member
+  start: 2020-10-01T00:00:00.000+03:30
   to_present_: true
   to_present: To present
   end: 
@@ -95,6 +61,40 @@ career:
   to_present_: false
   to_present: To present
   end: 2021-10-01T00:00:00.000+03:30
+- organization: Neuroscience Research Center, Isfahan University of Medical Sciences
+  role: Student Researcher
+  start: 2019-11-01T00:00:00.000+03:30
+  to_present_: false
+  to_present: To present
+  end: 2021-10-01T00:00:00.000+03:30
+- organization: Exceptional Talents Office, Education Development Center, Isfahan
+    University of Medical Sciences
+  role: Member
+  start: 2014-09-01T00:00:00.000+04:30
+  to_present_: false
+  to_present: To present
+  end: 2021-10-01T00:00:00.000+03:30
+- organization: Regenerative Medicine Research Center, Isfahan University of Medical
+    Sciences
+  role: Student Researcher
+  start: 2016-06-01T00:00:00.000+04:30
+  to_present_: false
+  to_present: To present
+  end: 2019-05-01T00:00:00.000+04:30
+- organization: Regenerative Medicine Research Center, Isfahan University of Medical
+    Sciences
+  role: Guest Investigator
+  start: 2015-06-01T00:00:00.000+04:30
+  to_present_: false
+  to_present: To present
+  end: 2016-05-01T00:00:00.000+04:30
+- organization: Farzanegan Amin Middle High School (National Organization for Development
+    of Exceptional Talents, NODET)
+  role: Biology Olympiad Teacher
+  start: 2015-01-01T00:00:00.000+03:30
+  to_present_: false
+  to_present: To present
+  end: 2016-08-01T00:00:00.000+04:30
 projects:
 - title: Zal Dementia Awareness Project
   team_members:

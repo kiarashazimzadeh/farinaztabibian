@@ -1,6 +1,8 @@
 ---
 about_me:
-  phone_number: '00989131026940'
+  phone_number:
+    country_code: '0098'
+    phone_number: 9131026940
   birthdate: 1996-08-04T00:00:00.000+04:30
   birthplace: Isfahan, Iran
   introduction: I’m a medical doctor, looking forward to be a clinician scientist

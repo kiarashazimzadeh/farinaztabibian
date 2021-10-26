@@ -59,7 +59,7 @@ fields:
       required: false
     label: Present
     hidden: true
-    default: Present
+    default: To present
     showOnly:
       field: to_present
       value: true
@@ -78,13 +78,215 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: organization
   label: Education
   description: Here you can add your education.
-- name: layout
-  type: text
+- name: career
+  type: field_group_list
+  fields:
+  - name: organization
+    type: text
+    config:
+      required: true
+    label: Organization
+  - name: start
+    type: datetime
+    description: ''
+    config:
+      required: true
+      date_format: MMM. YYYY
+      time_format: 
+      display_utc: false
+    label: Start
+  - name: to_present_
+    type: boolean
+    label: To present?
+  - name: to_present
+    type: text
+    config:
+      required: false
+    label: To present
+    hidden: true
+    showOnly:
+      field: to_present_
+      value: true
+    default: To present
+  - name: end
+    type: datetime
+    description: ''
+    config:
+      required: true
+      date_format: MMM. YYYY
+      time_format: 
+      display_utc: false
+    label: End
+    showOnly:
+      field: to_present_
   config:
-    required: false
-  hidden: true
-  label: Layout
-  default: resume
+    min: 
+    max: 
+    labelField: organization
+  label: Career
+- name: projects
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: team_members
+    type: field_group_list
+    fields:
+    - name: firstname
+      type: text
+      config:
+        required: true
+      label: Name
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Team members
+  - name: start
+    type: datetime
+    label: Start
+    description: ''
+    config:
+      required: true
+      date_format: MMM. YYYY
+      time_format: 
+      display_utc: false
+  - name: ongoing_
+    type: boolean
+    label: Ongoing?
+  - name: ongoing
+    type: text
+    config:
+      required: false
+    label: Ongoing
+    default: Ongoing
+    showOnly:
+      field: ongoing_
+      value: true
+    hidden: true
+  - name: end
+    type: datetime
+    label: End
+    description: ''
+    config:
+      required: false
+      date_format: MMM. YYYY
+      time_format: 
+      display_utc: false
+    showOnly:
+      field: ongoing_
+  - name: url
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: URL
+  config:
+    min: 
+    max: 
+    labelField: title
+  label: Projects
+- name: publications
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: journal
+    type: text
+    config:
+      required: true
+    label: Journal
+  - name: year
+    type: datetime
+    label: Year
+    description: ''
+    config:
+      required: true
+      date_format: YYYY
+      time_format: 
+      display_utc: false
+  - name: doi
+    type: text
+    config:
+      required: false
+    label: DOI
+  - name: url
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: URL
+  config:
+    min: 
+    max: 
+    labelField: title
+  label: Publications
+- name: honors
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: organization
+    type: text
+    config:
+      required: false
+    label: Organization
+  - name: year
+    type: datetime
+    label: Year
+    description: ''
+    config:
+      required: true
+      date_format: YYYY
+      time_format: 
+      display_utc: false
+  config:
+    min: 
+    max: 
+    labelField: title
+  label: Honors
+- name: events
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: location
+    type: text
+    config:
+      required: true
+    label: Location
+  - name: start
+    type: datetime
+    label: Start
+    description: ''
+    config:
+      required: true
+      date_format: MMM. YYYY
+      time_format: 
+      display_utc: false
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Events

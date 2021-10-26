@@ -236,16 +236,4 @@ languages:
   level: C2
   native_language: true
   native: ''
-skills_and_knowledge:
-- skill_or_knowledge: Teaching Techniques
-- skill_or_knowledge: Team Management
-- skill_or_knowledge: Scientific Presentation
-- skill_or_knowledge: Scientific Writing
-- skill_or_knowledge: Working with Laboratory Animal Models
-- skill_or_knowledge: Microsoft Office Software Packages
-- skill_or_knowledge: Psychophysics Tasks Design
-- skill_or_knowledge: IBM SPSS Software Package
-- skill_or_knowledge: MATLAB Programming Language
-- skill_or_knowledge: Statistical Data Analysis
-- skill_or_knowledge: Scientific Reasoning
-- skill_or_knowledge: General Medicine
+skills_and_knowledge: []

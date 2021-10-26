@@ -381,7 +381,7 @@ fields:
   config:
     min: 
     max: 
-    labelField: skill
+    labelField: skill_or_knowledge
   label: Skills & Knowledge
 - name: languages
   type: field_group_list

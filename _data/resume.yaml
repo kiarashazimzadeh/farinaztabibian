@@ -14,6 +14,12 @@ about_me:
   - title: LinkedIn
     url: http://www.linkedin.com/in/farinaz-tabibian
 education:
+- organization: Isfahan University of Medical Sciences
+  level: MD
+  start: 2014-09-01 00:00:00 +0430
+  to_present: false
+  present: To present
+  end: 2020-03-01 00:00:00 +0330
 - organization: Farzanegan Amin High School (National Organization for Development
     of Exceptional Talents, NODET)
   level: High School

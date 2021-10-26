@@ -218,6 +218,7 @@ events:
   role: Participant
   start: 2015-03-01T00:00:00.000+03:30
   location: Isfahan University of Medical Sciences
+languages: []
 skills_and_knowledge:
 - title: Teaching Techniques
 - title: Team Management
@@ -231,16 +232,3 @@ skills_and_knowledge:
 - title: Statistical Data Analysis
 - title: Scientific Reasoning
 - title: General Medicine
-languages:
-- language: Deutsch
-  native_language: false
-  native: Native Language
-  level: B1
-- level: C1
-  language: English
-  native_language: false
-  native: ''
-- language: Persian
-  level: C2
-  native_language: true
-  native: ''

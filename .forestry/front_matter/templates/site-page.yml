@@ -89,6 +89,11 @@ fields:
     config:
       required: true
     label: Organization
+  - name: role
+    type: text
+    config:
+      required: true
+    label: Role
   - name: start
     type: datetime
     description: ''
@@ -271,6 +276,19 @@ fields:
     config:
       required: true
     label: Title
+  - name: role
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Organizer
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Role
   - name: location
     type: text
     config:
@@ -290,3 +308,47 @@ fields:
     max: 
     labelField: 
   label: Events
+- name: skills
+  type: field_group_list
+  fields:
+  - name: skill
+    type: text
+    config:
+      required: true
+    label: Skill
+  config:
+    min: 
+    max: 
+    labelField: skill
+  label: Skills
+- name: languages
+  type: field_group_list
+  fields:
+  - name: language
+    type: text
+    config:
+      required: true
+    label: Language
+  - name: level
+    type: select
+    default: []
+    config:
+      required: true
+      options:
+      - A1
+      - A2
+      - B1
+      - B2
+      - C1
+      - C2
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Level
+  config:
+    min: 
+    max: 
+    labelField: language
+  label: Languages

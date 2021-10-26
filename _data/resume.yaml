@@ -224,8 +224,14 @@ skills:
 - skill: Statistical Analysis
 - skill: General Medicine
 languages:
+- level: C1
+  language: English
+  native_language: false
+  native: ''
 - language: Persian
   level: C2
+  native_language: true
+  native: ''
 skills_and_knowledge:
 - skill_or_knowledge: Teaching Techniques
 - skill_or_knowledge: Team Management

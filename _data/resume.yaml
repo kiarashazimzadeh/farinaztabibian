@@ -16,8 +16,10 @@ about_me:
   links:
   - title: ResearchGate
     url: http://www.researchgate.net/profile/Farinaz_Tabibian
+    username: Farinaz Tabibian
   - title: LinkedIn
     url: http://www.linkedin.com/in/farinaz-tabibian
+    username: Farinaz Tabibian
 education:
 - organization: Isfahan University of Medical Sciences
   level: MD

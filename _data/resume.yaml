@@ -92,6 +92,7 @@ projects:
 - title: Zal Dementia Awareness Project
   team_members:
   - firstname: Kiarash Azimzadeh
+    name: a member
   start: 2021-09-01T00:00:00.000+04:30
   ongoing_: true
   ongoing: Ongoing
@@ -99,11 +100,7 @@ projects:
   url: ''
 - title: Evaluation of Spatial Attention in Multiple Sclerosis Patients
   team_members:
-  - firstname: Fereshteh Ashtari
-  - firstname: Vahid Shayegannejad
-  - firstname: Kiarash Azimzadeh
-  - firstname: Mehdi Sanayei
-  - firstname: Iman Adibi
+  - name: a member
   start: 2020-05-01T00:00:00.000+04:30
   ongoing_: true
   ongoing: Ongoing

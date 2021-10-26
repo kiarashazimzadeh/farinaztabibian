@@ -378,7 +378,7 @@ fields:
     description: ''
     config:
       required: true
-      date_format: MMM. YYYY
+      date_format: YYYY
       time_format: 
       display_utc: false
   config:

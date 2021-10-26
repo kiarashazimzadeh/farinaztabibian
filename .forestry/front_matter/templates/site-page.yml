@@ -118,6 +118,12 @@ fields:
       max: 
       labelField: title
     label: Links
+  - name: profile_picture
+    type: file
+    config:
+      maxSize: 10
+    label: Profile picture
+    description: It should be less than 10 MB!
   label: About me
 - name: education
   type: field_group_list

@@ -96,6 +96,7 @@ fields:
       - MSc
       - PhD
       - Postdoc
+      - MD
       source:
         type: simple
         section: 

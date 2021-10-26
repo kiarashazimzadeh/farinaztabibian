@@ -37,6 +37,13 @@ education:
 career:
 - organization: Regenerative Medicine Research Center, Isfahan University of Medical
     Sciences
+  role: Guest Investigator
+  start: 2015-06-01 00:00:00 +0430
+  to_present_: false
+  to_present: To present
+  end: 2016-05-01 00:00:00 +0430
+- organization: Regenerative Medicine Research Center, Isfahan University of Medical
+    Sciences
   role: Student Researcher
   start: 2016-06-01 00:00:00 +0430
   to_present_: false

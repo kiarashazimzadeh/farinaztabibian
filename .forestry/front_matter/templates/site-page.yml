@@ -338,6 +338,21 @@ fields:
     config:
       required: true
     label: Title
+  - name: type
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Workshop
+      - Conference
+      - Virtual Meeting
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
   - name: role
     type: select
     default: []
@@ -345,6 +360,7 @@ fields:
       required: false
       options:
       - Organizer
+      - Participant
       source:
         type: simple
         section: 

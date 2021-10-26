@@ -1,383 +1,385 @@
 ---
 ---
 {% include head.html %}
-<main class="container bg-white shadow-lg py-5">
-    <div class="p-3 p-md-5">
-        <!-- Profile -->
-        <section id="about_me" class="row pb-4 mb-5 gap-4">
-            <div class="col-12">
-                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
-                    <i class="col fa-solid fa-user"></i>
-                </h1>
-                <div class="row flex-wrap-reverse mx-0 pt-4">
-                    <div class="col-12 {% if site.author.image != '' %}col-lg-9{% endif %}">
-                        <h2>
-                            {{ site.data.resume.about_me.complete_name -}}
-                            {% for title in site.data.resume.about_me.titles %}
-                            {{- title.title | prepend: ', ' -}}
-                            {% endfor %}
-                        </h2>
-                        <p class="lead">
-                            {{ site.data.resume.about_me.introduction }}
-                        </p>
-                    </div>
-                    {% if site.author.image != '' %}
-                    <div class="col-6 col-sm-4 col-md-3 pb-3 pb-lg-0">
-                        <img src="{{ site.author.image }}" class="img-fluid rounded-3" alt="">
-                    </div>
-                    {% endif %}
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex align-items-center gap-2 border-0">
-                                <i class="fa-solid fa-cake-candles fs-5 text-secondary"></i>
-                                Born in {{ site.data.resume.about_me.birthdate | date: '%e %B %Y' }}, {{ site.data.resume.about_me.birthplace }}
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2 border-0">
-                                <i class="fa-solid fa-comment-sms fs-5 text-secondary"></i>
-                                Phone number: 
-                                <a href="sms:{{ site.data.resume.about_me.phone_number.country_code }}{{ site.data.resume.about_me.phone_number.phone_number }}">
-                                    {{ site.data.resume.about_me.phone_number.country_code | remove: '00' | prepend: '+' }}{{ site.data.resume.about_me.phone_number.phone_number | prepend: ' ' }}
-                                </a>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2 border-0">
-                                <i class="fa-solid fa-envelope fs-5 text-secondary"></i>
-                                E-mail: 
-                                <a href="mailto: {{ site.data.resume.about_me.e-mail }}">
-                                    {{ site.data.resume.about_me.e-mail }}
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="list-group list-group-flush">
-                            {% for link in site.data.resume.about_me.links %}
-                            <li class="list-group-item d-flex align-items-center gap-2 border-0">
-                                <i class="fa-brands fa-{{ link.title | slugify }} fs-5 text-secondary"></i>
-                                {{ link.title | append: ':' }} 
-                                <a href="{{ link.url }}">
-                                    {{ link.username }}
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Eduction -->
-        <section id="education" class="row pb-4 mb-5 gap-3">
-            <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <div class="col">
-                    Education
-                </div>
-            </h1>
-            <div class="row mx-0">
-                <div class="col-12 d-flex flex-column gap-3">
-                    {% for education in site.data.resume.education %}
-                    <div class="row border-bottom py-4 g-3">
-                        <div class="col-12 col-md-3">
-                            <span class="fs-5">
-                                {{ education.level }}
-                            </span>
-                            <span class="fw-light">
-                                <br>
-                                {{ education.start | date: '%b. %Y' | prepend: 'from ' }}
-                                <br>
-                                {% if education.to_present == true %}
-                                <span class="p-1 px-2 bg-success rounded-pill text-white fw-bold" style="font-size: .75rem;">
-                                    to present
-                                </span>
-                                {% else %}
-                                {{ education.end | date: '%b. %Y' | prepend: 'to ' }}
-                                {% endif %}
-                            </span>
-                        </div>
-                        <div class="col fs-5">
-                            {{ education.organization }}
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
-        
-        <!-- Career -->
-        <section id="career" class="row pb-4 mb-5 gap-3">
-            <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
-                <i class="fa-solid fa-briefcase"></i>
-                <div class="col">
-                    Career
-                </div>
-            </h1>
-            <div class="row mx-0">
-                <div class="col-12 d-flex flex-column gap-3">
-                    {% for position in site.data.resume.career %}
-                    <div class="row border-bottom py-4 g-3">
-                        <div class="col-12 col-md-4">
-                            <span class="fs-5">
-                                {{ position.role }}
-                            </span>
-                            <span class="fw-light">
-                                <br>
-                                {{ position.start | date: '%b. %Y' | prepend: 'from ' }}
-                                <br>
-                                {% if position.to_present_ == true %}
-                                <span class="p-1 px-2 bg-success rounded-pill text-white fw-bold" style="font-size: .75rem;">
-                                    to present
-                                </span>
-                                {% else %}
-                                {{ position.end | date: '%b. %Y' | prepend: 'to ' }}
-                                {% endif %}
-                            </span>
-                        </div>
-                        <div class="col fs-5">
-                            {{ position.organization }}
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
-        
-        <!-- Projects -->
-        <section id="projects" class="row pb-4 mb-5 gap-3">
-            <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
-                <i class="fa-solid fa-folder"></i>
-                <div class="col">
-                    Projects
-                </div>
-            </h1>
-            <div class="row mx-0">
-                <div class="col-12 d-flex flex-column gap-3">
-                    {% for project in site.data.resume.projects %}
-                    <div class="row border-bottom py-4 g-3">
-                        <div class="row mb-2">
-                            {% if project.url != '' %}
-                            <a href="{{ project.url }}">
-                                {% endif %}
-                                <span class="fs-5">
-                                    {{ project.title }}
-                                </span>
-                                {% if project.url != '' %}
-                            </a>
-                            {% endif %}
-                        </div>
-                        <div class="row fw-light">
-                            <span>
-                                <i class="fa-solid fa-user-plus"></i>
-                                {% for member in project.team_members %}
-                                {% if forloop.last == true %}
-                                {{ member.name }}
-                                {% else %}
-                                {{ member.name | append: ',' }}
-                                {% endif %}
+<div class="container-fluid bg-secondary" style="min-height: 100vh;">
+    <main class="container bg-white shadow-lg py-5">
+        <div class="p-3 p-md-5">
+            <!-- Profile -->
+            <section id="about_me" class="row pb-4 mb-5 gap-4">
+                <div class="col-12">
+                    <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+                        <i class="col fa-solid fa-user"></i>
+                    </h1>
+                    <div class="row flex-wrap-reverse mx-0 pt-4">
+                        <div class="col-12 {% if site.author.image != '' %}col-lg-9{% endif %}">
+                            <h2>
+                                {{ site.data.resume.about_me.complete_name -}}
+                                {% for title in site.data.resume.about_me.titles %}
+                                {{- title.title | prepend: ', ' -}}
                                 {% endfor %}
-                                <br>
-                                {{ project.start | date: '%b. %Y' | prepend: 'from ' }}
-                                {% if project.ongoing_ == true %}
-                                <br>
-                                <span class="p-1 px-2 bg-success rounded-pill text-white fw-bold" style="font-size: .75rem;">
-                                    ongoing
-                                </span>
-                                {% else %}
-                                {{ project.end | date: '%b. %Y' | prepend: 'to ' }}
-                                {% endif %}
-                            </span>
+                            </h2>
+                            <p class="lead">
+                                {{ site.data.resume.about_me.introduction }}
+                            </p>
+                        </div>
+                        {% if site.author.image != '' %}
+                        <div class="col-6 col-sm-4 col-md-3 pb-3 pb-lg-0">
+                            <img src="{{ site.author.image }}" class="img-fluid rounded-3" alt="">
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex align-items-center gap-2 border-0">
+                                    <i class="fa-solid fa-cake-candles fs-5 text-secondary"></i>
+                                    Born in {{ site.data.resume.about_me.birthdate | date: '%e %B %Y' }}, {{ site.data.resume.about_me.birthplace }}
+                                </li>
+                                <li class="list-group-item d-flex align-items-center gap-2 border-0">
+                                    <i class="fa-solid fa-comment-sms fs-5 text-secondary"></i>
+                                    Phone number: 
+                                    <a href="sms:{{ site.data.resume.about_me.phone_number.country_code }}{{ site.data.resume.about_me.phone_number.phone_number }}">
+                                        {{ site.data.resume.about_me.phone_number.country_code | remove: '00' | prepend: '+' }}{{ site.data.resume.about_me.phone_number.phone_number | prepend: ' ' }}
+                                    </a>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center gap-2 border-0">
+                                    <i class="fa-solid fa-envelope fs-5 text-secondary"></i>
+                                    E-mail: 
+                                    <a href="mailto: {{ site.data.resume.about_me.e-mail }}">
+                                        {{ site.data.resume.about_me.e-mail }}
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="list-group list-group-flush">
+                                {% for link in site.data.resume.about_me.links %}
+                                <li class="list-group-item d-flex align-items-center gap-2 border-0">
+                                    <i class="fa-brands fa-{{ link.title | slugify }} fs-5 text-secondary"></i>
+                                    {{ link.title | append: ':' }} 
+                                    <a href="{{ link.url }}">
+                                        {{ link.username }}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
                         </div>
                     </div>
-                    {% endfor %}
                 </div>
-            </div>
-        </section>
-        
-        <!-- Publications -->
-        <section id="publications" class="row pb-4 mb-5 gap-3">
-            <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
-                <i class="fa-solid fa-newspaper"></i>
-                <div class="col">
-                    Publications
-                </div>
-            </h1>
-            <div class="row mx-0">
-                <div class="col-12 d-flex flex-column gap-3">
-                    {% for article in site.data.resume.publications %}
-                    <div class="row border-bottom py-4 g-1">
-                        <div class="row mb-2">
-                            {% if article.url != '' %}
-                            <a href="{{ article.url }}">
-                                {% endif %}
+            </section>
+            
+            <!-- Eduction -->
+            <section id="education" class="row pb-4 mb-5 gap-3">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div class="col">
+                        Education
+                    </div>
+                </h1>
+                <div class="row mx-0">
+                    <div class="col-12 d-flex flex-column gap-3">
+                        {% for education in site.data.resume.education %}
+                        <div class="row border-bottom py-4 g-3">
+                            <div class="col-12 col-md-3">
                                 <span class="fs-5">
-                                    {{ article.title }}
+                                    {{ education.level }}
                                 </span>
+                                <span class="fw-light">
+                                    <br>
+                                    {{ education.start | date: '%b. %Y' | prepend: 'from ' }}
+                                    <br>
+                                    {% if education.to_present == true %}
+                                    <span class="p-1 px-2 bg-success rounded-pill text-white fw-bold" style="font-size: .75rem;">
+                                        to present
+                                    </span>
+                                    {% else %}
+                                    {{ education.end | date: '%b. %Y' | prepend: 'to ' }}
+                                    {% endif %}
+                                </span>
+                            </div>
+                            <div class="col fs-5">
+                                {{ education.organization }}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Career -->
+            <section id="career" class="row pb-4 mb-5 gap-3">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <div class="col">
+                        Career
+                    </div>
+                </h1>
+                <div class="row mx-0">
+                    <div class="col-12 d-flex flex-column gap-3">
+                        {% for position in site.data.resume.career %}
+                        <div class="row border-bottom py-4 g-3">
+                            <div class="col-12 col-md-4">
+                                <span class="fs-5">
+                                    {{ position.role }}
+                                </span>
+                                <span class="fw-light">
+                                    <br>
+                                    {{ position.start | date: '%b. %Y' | prepend: 'from ' }}
+                                    <br>
+                                    {% if position.to_present_ == true %}
+                                    <span class="p-1 px-2 bg-success rounded-pill text-white fw-bold" style="font-size: .75rem;">
+                                        to present
+                                    </span>
+                                    {% else %}
+                                    {{ position.end | date: '%b. %Y' | prepend: 'to ' }}
+                                    {% endif %}
+                                </span>
+                            </div>
+                            <div class="col fs-5">
+                                {{ position.organization }}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Projects -->
+            <section id="projects" class="row pb-4 mb-5 gap-3">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+                    <i class="fa-solid fa-folder"></i>
+                    <div class="col">
+                        Projects
+                    </div>
+                </h1>
+                <div class="row mx-0">
+                    <div class="col-12 d-flex flex-column gap-3">
+                        {% for project in site.data.resume.projects %}
+                        <div class="row border-bottom py-4 g-3">
+                            <div class="row mb-2">
                                 {% if project.url != '' %}
-                            </a>
-                            {% endif %}
-                        </div>
-                        <div class="row fw-light">
-                            <span>
-                                <i class="fa-solid fa-book"></i>
-                                {{ article.journal }}
-                                <br>
-                                {{ article.year | date: '%Y'}}
-                            </span>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
-        
-        <!-- Honors -->
-        <section id="honors" class="row pb-4 mb-5 gap-3">
-            <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
-                <i class="fa-solid fa-award text-warning"></i>
-                <div class="col">
-                    Honors
-                </div>
-            </h1>
-            <div class="row mx-0">
-                <div class="col-12 d-flex flex-column gap-3">
-                    {% for honor in site.data.resume.honors %}
-                    <div class="row border-bottom py-4 g-1">
-                        <div class="row mb-2">
-                            <span class="fs-5">
-                                {{ honor.title }}
-                            </span>
-                        </div>
-                        <div class="row fw-light">
-                            <span>
-                                {{ honor.organization }}
-                                <br>
-                                {{ honor.year | date: '%Y'}}
-                            </span>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
-        
-        <!-- Events -->
-        <section id="events" class="row pb-4 mb-5 gap-3">
-            <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
-                <i class="fa-solid fa-calendar-day"></i>
-                <div class="col">
-                    Events
-                </div>
-            </h1>
-            <div class="row mx-0">
-                <div class="col-12 col-md-6 d-flex flex-column gap-3">
-                    {% for event in site.data.resume.events %}
-                    {% assign forloophalf =  forloop.length | divided_by: 2 %}
-                    {% if forloop.index > forloophalf  %}
-                    {% continue %}
-                    {% endif %}
-                    <div class="row border-bottom py-4 g-1">
-                        <div class="row mb-2">
-                            <span class="fs-5">
-                                <span class="p-1 px-2 bg-secondary rounded-pill text-white fw-bold" style="font-size: .75rem;">
-                                    {{ event.type }}
-                                </span>
-                                <br>
-                                {{ event.title }}
-                            </span>
-                        </div>
-                        <div class="row fw-light">
-                            <span>
-                                {{ event.role }}
-                                <br>
-                                {{ event.start | date: '%Y'}}
-                            </span>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-                <div class="col-12 col-md-6 d-flex flex-column gap-3">
-                    {% for event in site.data.resume.events %}
-                    {% assign forloophalf =  forloop.length | divided_by: 2 %}
-                    {% if forloop.index > forloophalf  %}
-                    <div class="row border-bottom py-4 g-1">
-                        <div class="row mb-2">
-                            <span class="fs-5">
-                                <span class="p-1 px-2 bg-secondary rounded-pill text-white fw-bold" style="font-size: .75rem;">
-                                    {{ event.type }}
-                                </span>
-                                <br>
-                                {{ event.title }}
-                            </span>
-                        </div>
-                        <div class="row fw-light">
-                            <span>
-                                {{ event.role }}
-                                <br>
-                                {{ event.start | date: '%Y'}}
-                            </span>
-                        </div>
-                    </div>
-                    {% endif %}
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
-        
-        <!-- Skill & Knowledge -->
-        <section id="skills_and_knowledge" class="row pb-4 mb-5 gap-3">
-            <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
-                <i class="fa-solid fa-gear"></i>
-                <div class="col">
-                    Skills & Knowledge
-                </div>
-            </h1>
-            <div class="row mx-0">
-                <div class="col-12 d-flex flex-column gap-3">
-                    <div class="d-flex flex-wrap py-4 gap-2">
-                        {% for skill in site.data.resume.skills_and_knowledge %}
-                        <span class="p-1 px-2 bg-light border border-3 rounded-pill fw-bold">
-                            {{ skill.title }}
-                        </span>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Language -->
-        <section id="languages" class="row pb-4 mb-5 gap-3">
-            <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
-                <i class="fa-solid fa-language"></i>
-                <div class="col">
-                    Languages
-                </div>
-            </h1>
-            <div class="row mx-0">
-                <div class="col-12 d-flex flex-column gap-3">
-                    <div class="d-flex flex-wrap py-4 gap-2">
-                        {% for language in site.data.resume.languages %}
-                        <span class="p-2 px-3 bg-light border border-3 rounded-pill text-center fw-bold">
-                            <img
-                            srcset="https://flagcdn.com/32x24/{{ language.country_code | slugify }}.png 2x,
-                            https://flagcdn.com/48x36/{{ language.country_code | slugify }}.png 3x"
-                            width="24"
-                            height="18">
-                            <br>
-                            {{ language.language }}
-                            <br>
-                            <span class="fw-light">
-                                {% if language.native_language == true %}
-                                Native
-                                {% else %}
-                                    {{ language.level }}
+                                <a href="{{ project.url }}">
+                                    {% endif %}
+                                    <span class="fs-5">
+                                        {{ project.title }}
+                                    </span>
+                                    {% if project.url != '' %}
+                                </a>
                                 {% endif %}
-                            </span>
-                        </span>
+                            </div>
+                            <div class="row fw-light">
+                                <span>
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    {% for member in project.team_members %}
+                                    {% if forloop.last == true %}
+                                    {{ member.name }}
+                                    {% else %}
+                                    {{ member.name | append: ',' }}
+                                    {% endif %}
+                                    {% endfor %}
+                                    <br>
+                                    {{ project.start | date: '%b. %Y' | prepend: 'from ' }}
+                                    {% if project.ongoing_ == true %}
+                                    <br>
+                                    <span class="p-1 px-2 bg-success rounded-pill text-white fw-bold" style="font-size: .75rem;">
+                                        ongoing
+                                    </span>
+                                    {% else %}
+                                    {{ project.end | date: '%b. %Y' | prepend: 'to ' }}
+                                    {% endif %}
+                                </span>
+                            </div>
+                        </div>
                         {% endfor %}
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</main>
+            </section>
+            
+            <!-- Publications -->
+            <section id="publications" class="row pb-4 mb-5 gap-3">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <div class="col">
+                        Publications
+                    </div>
+                </h1>
+                <div class="row mx-0">
+                    <div class="col-12 d-flex flex-column gap-3">
+                        {% for article in site.data.resume.publications %}
+                        <div class="row border-bottom py-4 g-1">
+                            <div class="row mb-2">
+                                {% if article.url != '' %}
+                                <a href="{{ article.url }}">
+                                    {% endif %}
+                                    <span class="fs-5">
+                                        {{ article.title }}
+                                    </span>
+                                    {% if project.url != '' %}
+                                </a>
+                                {% endif %}
+                            </div>
+                            <div class="row fw-light">
+                                <span>
+                                    <i class="fa-solid fa-book"></i>
+                                    {{ article.journal }}
+                                    <br>
+                                    {{ article.year | date: '%Y'}}
+                                </span>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Honors -->
+            <section id="honors" class="row pb-4 mb-5 gap-3">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+                    <i class="fa-solid fa-award text-warning"></i>
+                    <div class="col">
+                        Honors
+                    </div>
+                </h1>
+                <div class="row mx-0">
+                    <div class="col-12 d-flex flex-column gap-3">
+                        {% for honor in site.data.resume.honors %}
+                        <div class="row border-bottom py-4 g-1">
+                            <div class="row mb-2">
+                                <span class="fs-5">
+                                    {{ honor.title }}
+                                </span>
+                            </div>
+                            <div class="row fw-light">
+                                <span>
+                                    {{ honor.organization }}
+                                    <br>
+                                    {{ honor.year | date: '%Y'}}
+                                </span>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Events -->
+            <section id="events" class="row pb-4 mb-5 gap-3">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+                    <i class="fa-solid fa-calendar-day"></i>
+                    <div class="col">
+                        Events
+                    </div>
+                </h1>
+                <div class="row mx-0">
+                    <div class="col-12 col-md-6 d-flex flex-column gap-3">
+                        {% for event in site.data.resume.events %}
+                        {% assign forloophalf =  forloop.length | divided_by: 2 %}
+                        {% if forloop.index > forloophalf  %}
+                        {% continue %}
+                        {% endif %}
+                        <div class="row border-bottom py-4 g-1">
+                            <div class="row mb-2">
+                                <span class="fs-5">
+                                    <span class="p-1 px-2 bg-secondary rounded-pill text-white fw-bold" style="font-size: .75rem;">
+                                        {{ event.type }}
+                                    </span>
+                                    <br>
+                                    {{ event.title }}
+                                </span>
+                            </div>
+                            <div class="row fw-light">
+                                <span>
+                                    {{ event.role }}
+                                    <br>
+                                    {{ event.start | date: '%Y'}}
+                                </span>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column gap-3">
+                        {% for event in site.data.resume.events %}
+                        {% assign forloophalf =  forloop.length | divided_by: 2 %}
+                        {% if forloop.index > forloophalf  %}
+                        <div class="row border-bottom py-4 g-1">
+                            <div class="row mb-2">
+                                <span class="fs-5">
+                                    <span class="p-1 px-2 bg-secondary rounded-pill text-white fw-bold" style="font-size: .75rem;">
+                                        {{ event.type }}
+                                    </span>
+                                    <br>
+                                    {{ event.title }}
+                                </span>
+                            </div>
+                            <div class="row fw-light">
+                                <span>
+                                    {{ event.role }}
+                                    <br>
+                                    {{ event.start | date: '%Y'}}
+                                </span>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Skill & Knowledge -->
+            <section id="skills_and_knowledge" class="row pb-4 mb-5 gap-3">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+                    <i class="fa-solid fa-gear"></i>
+                    <div class="col">
+                        Skills & Knowledge
+                    </div>
+                </h1>
+                <div class="row mx-0">
+                    <div class="col-12 d-flex flex-column gap-3">
+                        <div class="d-flex flex-wrap py-4 gap-2">
+                            {% for skill in site.data.resume.skills_and_knowledge %}
+                            <span class="p-1 px-2 bg-light border border-3 rounded-pill fw-bold">
+                                {{ skill.title }}
+                            </span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Language -->
+            <section id="languages" class="row pb-4 mb-5 gap-3">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+                    <i class="fa-solid fa-language"></i>
+                    <div class="col">
+                        Languages
+                    </div>
+                </h1>
+                <div class="row mx-0">
+                    <div class="col-12 d-flex flex-column gap-3">
+                        <div class="d-flex flex-wrap py-4 gap-2">
+                            {% for language in site.data.resume.languages %}
+                            <span class="p-2 px-3 bg-light border border-3 rounded-pill text-center fw-bold">
+                                <img
+                                srcset="https://flagcdn.com/32x24/{{ language.country_code | slugify }}.png 2x,
+                                https://flagcdn.com/48x36/{{ language.country_code | slugify }}.png 3x"
+                                width="24"
+                                height="18">
+                                <br>
+                                {{ language.language }}
+                                <br>
+                                <span class="fw-light">
+                                    {% if language.native_language == true %}
+                                    Native
+                                    {% else %}
+                                    {{ language.level }}
+                                    {% endif %}
+                                </span>
+                            </span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
 
 {% include footer.html %}

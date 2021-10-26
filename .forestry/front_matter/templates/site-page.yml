@@ -32,6 +32,48 @@ fields:
       max: 500
       min: 50
     label: Introduction
+  - name: phone_number
+    type: number
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+      required: true
+    label: Phone number
+  - name: e-mail
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: E-mail
+  - name: links
+    type: field_group_list
+    fields:
+    - name: title
+      type: text
+      config:
+        required: true
+      label: Title
+    - name: url
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: URL
+    config:
+      min: 
+      max: 
+      labelField: title
+    label: Links
   label: About me
 - name: education
   type: field_group_list

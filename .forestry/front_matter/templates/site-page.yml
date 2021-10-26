@@ -32,17 +32,6 @@ fields:
       max: 500
       min: 50
     label: Introduction
-  - name: phone_number
-    type: number
-    description: ''
-    default: 0
-    required: true
-    config:
-      min: 
-      max: 
-      step: 
-      required: true
-    label: Phone number
   - name: e-mail
     type: textarea
     default: ''
@@ -52,6 +41,33 @@ fields:
       schema:
         format: markdown
     label: E-mail
+  - name: phone_number
+    type: field_group
+    config: {}
+    fields:
+    - name: country_code
+      type: number
+      label: Country code
+      description: 'Example: 0098'
+      default: 0
+      required: true
+      config:
+        min: 
+        max: 
+        step: 
+        required: true
+    - name: phone_number
+      type: number
+      label: Phone number
+      description: 'Example: 9130001122'
+      default: 0
+      required: true
+      config:
+        min: 
+        max: 
+        step: 
+        required: true
+    label: Phone number
   - name: links
     type: field_group_list
     fields:

@@ -1,11 +1,8 @@
 * {
-    font-family: Roboto, sans-serif;
-}
+  font-family: Roboto, sans-serif; }
 
 a {
-    text-decoration: none;
-}
+  text-decoration: none; }
 
 .container {
-    max-width: 992px !important;
-}
+  max-width: 992px !important; }

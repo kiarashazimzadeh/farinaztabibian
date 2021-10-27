@@ -7,7 +7,7 @@
         <div class="p-3 p-md-5">
 
             <!-- Profile -->
-            <section id="about_me" class="row pb-4 mb-5 gap-4">
+            <section id="about_me" class="row pb-4 mb-5 gap-4 print-margin print-padding">
                 <div class="col-12">
                     <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
                         <i class="col fa-solid fa-user"></i>
@@ -69,17 +69,17 @@
             </section>
             
             <!-- Eduction -->
-            <section id="education" class="row pb-4 mb-5 gap-3">
-                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+            <section id="education" class="row pb-4 mb-5 gap-3 print-margin print-padding">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light print-margin print-padding">
                     <i class="fa-solid fa-graduation-cap"></i>
-                    <div class="col">
+                    <div class="col print-font">
                         Education
                     </div>
                 </h1>
                 <div class="row mx-0">
                     <div class="col-12 d-flex flex-column gap-3">
                         {% for education in site.data.resume.education %}
-                        <div class="row border-bottom py-4 g-3">
+                        <div class="row border-bottom py-4 g-3 print-padding">
                             <div class="col-12 col-md-3">
                                 <span class="fs-5">
                                     {{ education.level }}
@@ -107,17 +107,17 @@
             </section>
             
             <!-- Career -->
-            <section id="career" class="row pb-4 mb-5 gap-3">
-                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+            <section id="career" class="row pb-4 mb-5 gap-3 print-margin print-padding">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light print-margin print-padding">
                     <i class="fa-solid fa-briefcase"></i>
-                    <div class="col">
+                    <div class="col print-font">
                         Career
                     </div>
                 </h1>
                 <div class="row mx-0">
                     <div class="col-12 d-flex flex-column gap-3">
                         {% for position in site.data.resume.career %}
-                        <div class="row border-bottom py-4 g-3">
+                        <div class="row border-bottom py-4 g-3 print-padding">
                             <div class="col-12 col-md-4">
                                 <span class="fs-5">
                                     {{ position.role }}
@@ -145,17 +145,17 @@
             </section>
             
             <!-- Projects -->
-            <section id="projects" class="row pb-4 mb-5 gap-3">
-                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+            <section id="projects" class="row pb-4 mb-5 gap-3 print-margin print-padding">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light print-margin print-padding">
                     <i class="fa-solid fa-folder"></i>
-                    <div class="col">
+                    <div class="col print-font">
                         Projects
                     </div>
                 </h1>
                 <div class="row mx-0">
                     <div class="col-12 d-flex flex-column gap-3">
                         {% for project in site.data.resume.projects %}
-                        <div class="row border-bottom py-4 g-3">
+                        <div class="row border-bottom py-4 g-3 print-padding">
                             <div class="row mb-2">
                                 {% if project.url != '' %}
                                 <a href="{{ project.url }}">
@@ -196,17 +196,17 @@
             </section>
             
             <!-- Publications -->
-            <section id="publications" class="row pb-4 mb-5 gap-3">
-                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+            <section id="publications" class="row pb-4 mb-5 gap-3 print-margin print-padding">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light print-margin print-padding">
                     <i class="fa-solid fa-newspaper"></i>
-                    <div class="col">
+                    <div class="col print-font">
                         Publications
                     </div>
                 </h1>
                 <div class="row mx-0">
                     <div class="col-12 d-flex flex-column gap-3">
                         {% for article in site.data.resume.publications %}
-                        <div class="row border-bottom py-4 g-1">
+                        <div class="row border-bottom py-4 g-1 print-padding">
                             <div class="row mb-2">
                                 {% if article.url != '' %}
                                 <a href="{{ article.url }}">
@@ -233,17 +233,17 @@
             </section>
             
             <!-- Honors -->
-            <section id="honors" class="row pb-4 mb-5 gap-3">
-                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+            <section id="honors" class="row pb-4 mb-5 gap-3 print-margin print-padding">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light print-margin print-padding">
                     <i class="fa-solid fa-award text-warning"></i>
-                    <div class="col">
+                    <div class="col print-font">
                         Honors
                     </div>
                 </h1>
                 <div class="row mx-0">
                     <div class="col-12 d-flex flex-column gap-3">
                         {% for honor in site.data.resume.honors %}
-                        <div class="row border-bottom py-4 g-1">
+                        <div class="row border-bottom py-4 g-1 print-padding">
                             <div class="row mb-2">
                                 <span class="fs-5">
                                     {{ honor.title }}
@@ -263,10 +263,10 @@
             </section>
             
             <!-- Events -->
-            <section id="events" class="row pb-4 mb-5 gap-3">
-                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+            <section id="events" class="row pb-4 mb-5 gap-3 print-margin print-padding">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light print-margin print-padding">
                     <i class="fa-solid fa-calendar-day"></i>
-                    <div class="col">
+                    <div class="col print-font">
                         Events
                     </div>
                 </h1>
@@ -277,7 +277,7 @@
                         {% if forloop.index > forloophalf  %}
                         {% continue %}
                         {% endif %}
-                        <div class="row border-bottom py-4 g-1">
+                        <div class="row border-bottom py-4 g-1 print-padding">
                             <div class="row mb-2">
                                 <span class="fs-5">
                                     <span class="p-1 px-2 bg-secondary rounded-pill text-white fw-bold" style="font-size: .75rem;">
@@ -326,16 +326,16 @@
             </section>
             
             <!-- Skill & Knowledge -->
-            <section id="skills_and_knowledge" class="row pb-4 mb-5 gap-3">
-                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+            <section id="skills_and_knowledge" class="row pb-4 mb-5 gap-3 print-margin print-padding">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light print-margin print-padding">
                     <i class="fa-solid fa-gear"></i>
-                    <div class="col">
+                    <div class="col print-font">
                         Skills & Knowledge
                     </div>
                 </h1>
                 <div class="row mx-0">
                     <div class="col-12 d-flex flex-column gap-3">
-                        <div class="d-flex flex-wrap py-4 gap-2">
+                        <div class="d-flex flex-wrap py-4 gap-2 print-padding">
                             {% for skill in site.data.resume.skills_and_knowledge %}
                             <span class="p-1 px-2 bg-light border border-3 rounded-pill fw-bold">
                                 {{ skill.title }}
@@ -347,16 +347,16 @@
             </section>
             
             <!-- Language -->
-            <section id="languages" class="row pb-4 mb-5 gap-3">
-                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light">
+            <section id="languages" class="row pb-4 mb-5 gap-3 print-margin print-padding">
+                <h1 class="row row-cols-auto align-items-center py-2 px-0 mx-0 mb-2 text-secondary fw-light print-margin print-padding">
                     <i class="fa-solid fa-language"></i>
-                    <div class="col">
+                    <div class="col print-font">
                         Languages
                     </div>
                 </h1>
                 <div class="row mx-0">
                     <div class="col-12 d-flex flex-column gap-3">
-                        <div class="d-flex flex-wrap py-4 gap-2">
+                        <div class="d-flex flex-wrap py-4 gap-2 print-padding">
                             {% for language in site.data.resume.languages %}
                             <span class="p-2 px-3 bg-light border border-3 rounded-pill text-center fw-bold">
                                 <img

@@ -25,7 +25,7 @@ sections:
 - type: jekyll-posts
   label: Blog posts
   create: all
-  new_doc_ext: ".html"
+  new_doc_ext: html
 - type: jekyll-pages
   label: Site pages
   create: all
